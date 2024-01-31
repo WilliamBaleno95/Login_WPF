@@ -33,11 +33,10 @@
                         <Button x:Name="btn_exit" ToolTip="Close Applicatin" Content="Exit Application " Click="exitApp"/>
 
                     </StackPanel>
-                  
-                    
-                </materialDesign:PopupBox>
 
-                <Image Margin="0 60 0 5" Source="images.png" Height="20"/>
+
+                </materialDesign:PopupBox>
+                <Image Height="100" Width="100" Source="/images.png"/>
                 <TextBlock Margin="0 25 0 5" HorizontalAlignment="Center" FontSize="28" FontWeight="Bold" Text="Welcome Back!"/>
                 <TextBlock FontSize="17" FontWeight="SemiBold" HorizontalAlignment="Center" 
                            Text="Log in to your existing account"/>
@@ -50,7 +49,7 @@
                              Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}"/>
 
                 <Button Margin="0 20 0 0" x:Name="loginBtn" Style="{StaticResource MaterialDesignFlatMidBgButton}" 
-                        Height="53" Width="300" materialDesign:ButtonAssist.CornerRadius="10" FontSize="18" Content="LOG IN"/>
+                        Height="53" Width="300" materialDesign:ButtonAssist.CornerRadius="10" FontSize="18" Content="LOG IN" Click="loginBtn_Click"/>
 
                 <Button  Margin="0 20 0 0" x:Name="signupBtn" Style="{StaticResource MaterialDesignFlatButton}"
                          Height="53" Width="300" materialDesign:ButtonAssist.CornerRadius="10" FontSize="18"
@@ -58,7 +57,7 @@
 
             </StackPanel>
         </materialDesign:DialogHost>
-        
-        
+
+
     </materialDesign:Card>
 </Window>
